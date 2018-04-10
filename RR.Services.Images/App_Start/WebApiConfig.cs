@@ -1,6 +1,4 @@
-﻿using RR.Services.Images.Core;
-using RR.Services.Images.Logging;
-using SimpleInjector;
+﻿using SimpleInjector;
 using System;
 using System.Collections.Generic;
 using System.Linq;

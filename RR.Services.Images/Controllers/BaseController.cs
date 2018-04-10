@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -14,6 +15,6 @@ namespace RR.Services.Images.Controllers
             Context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        protected ServiceContext Context { get; set; }
+        protected ServiceContext Context { get; }
     }
 }

@@ -3,8 +3,7 @@
 namespace RR.Services.Images.App_Start
 {
     using System.Web.Http;
-    using RR.Services.Images.Core;
-    using RR.Services.Images.Logging;
+    using Common.Logging;
     using SimpleInjector;
     using SimpleInjector.Integration.WebApi;
     using SimpleInjector.Lifestyles;
@@ -29,7 +28,6 @@ namespace RR.Services.Images.App_Start
      
         private static void InitializeContainer(Container container)
         {
-            container.RegisterSingleton<ILogger, ConsoleLogger>();
             container.Register<ServiceContext>();
         }
     }

@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using RR.Services.Images.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +19,6 @@ namespace RR.Services.Images.Controllers
         [HttpGet]
         public IHttpActionResult Get()
         {
-            Context.Logger.Log("got a GET");
-
             var version = Assembly.GetExecutingAssembly().GetName().Version;
             return Ok(JsonConvert.SerializeObject(version));
         }
